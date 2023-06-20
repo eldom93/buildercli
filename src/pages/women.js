@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Women.module.css";
+import { BuilderComponent} from '@builder.io/react'
 
 const Women = () => {
   return (
@@ -8,6 +9,8 @@ const Women = () => {
         <title>Women</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <BuilderComponent model="header" />
+         
       <h1 className={styles.title}>Women</h1>
       <p className={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -23,6 +26,7 @@ const Women = () => {
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
         velit esse cillum dolore eu fug
       </p>
+
     </div>
   );
 };
