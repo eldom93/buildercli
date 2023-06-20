@@ -34,23 +34,6 @@ export async function getStaticPaths() {
         };
 }
 
-Builder.registerComponent(
-    dynamic(() => import("../components/heading")), 
-    {
-        name: 'Heading',
-        inputs:[{name: 'title', type:'text'}],
-        image:'https://tabler-icons.io/images/builder/heading.png',
-    }
-);
-Builder.registerComponent(
-    dynamic(() => import("../components/nav")), 
-    {
-        name: 'Nav',
-        inputs:[{name: 'title', type:'text'}],
-        image:'https://tabler-icons.io/images/builder/heading.png',
-    }
-);
-
 export default function Page({page}) {
     const router = useRouter();
     const isPreviewing = useIsPreviewing();
