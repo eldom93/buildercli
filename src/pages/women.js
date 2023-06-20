@@ -10,8 +10,7 @@ const Women = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BuilderComponent model="header" />
-         
-      <h1 className={styles.title}>Women</h1>
+    
       <p className={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
