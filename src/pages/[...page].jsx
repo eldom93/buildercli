@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import { BuilderComponent, builder, useIsPreviewing, Builder } from '@builder.io/react'
 import { useRouter } from 'next/router';
-import { DefaultErrorPage } from '@builder.io/react'
+import DefaultErrorPage from 'next/error'
 import dynamic from 'next/dynamic'
 import '../styles/global.css'
 // import Footer from "../components/footer"
