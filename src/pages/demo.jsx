@@ -2,10 +2,10 @@ import Head from 'next/head'
 import React from 'react'
 import { BuilderComponent, builder, useIsPreviewing, Builder } from '@builder.io/react'
 import { useRouter } from 'next/router';
-import { DefaultErrorPage } from '@builder.io/react'
 import dynamic from 'next/dynamic'
 import Home from "./test"
 // import Footer from "../components/footer"
+builder.init("79f07ebfb33941cb96e9babd569e83d8");
 export async function getStaticProps() {
     const demo = await builder.get('demo', {
       // You can use options for queries, sorting, and targeting here

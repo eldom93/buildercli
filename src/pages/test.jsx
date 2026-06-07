@@ -3,7 +3,7 @@ import React from 'react'
 // import { builder } from '@builder.io/react';
 import { builder } from '@builder.io/sdk'
 // Replace with your Public API Key.
-// builder.init("79f07ebfb33941cb96e9babd569e83d8");
+ builder.init("79f07ebfb33941cb96e9babd569e83d8");
 
 export async function getStaticProps() {
   const links = await builder.get('nav-link', {
