@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic'
 import '../styles/global.css'
 // import Footer from "../components/footer"
 
-builder.init("79f07ebfb33941cb96e9babd569e83d8");
+builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
 export async function getStaticProps({params}) {
     const page = await builder.get('page', {

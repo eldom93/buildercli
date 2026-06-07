@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic'
 import Home from "./test"
 // import Footer from "../components/footer"
-builder.init("79f07ebfb33941cb96e9babd569e83d8");
+builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 export async function getStaticProps() {
     const demo = await builder.get('demo', {
       // You can use options for queries, sorting, and targeting here
